@@ -48,27 +48,27 @@ body {
 }
 
 #save {
-    background: url("public/images/save.png");
+    background: url("controls/save.png");
 }
 
 #delete {
-    background: url("public/images/delete.png");
+    background: url("controls/delete.png");
 }
 
 #import {
-    background: url("public/images/import.png");
+    background: url("controls/import.png");
 }
 
 #expand {
-    background: url("public/images/expand.png");
+    background: url("controls/expand.png");
 }
 
 #shrink {
-    background: url("public/images/shrink.png");
+    background: url("controls/shrink.png");
 }
 
 #flip {
-    background: url("public/images/flip.png");
+    background: url("controls/flip.png");
 }
 
 .panel {
@@ -171,7 +171,7 @@ body {
 #leftArrow {
     margin-top: 272px;
     float: left;
-    background: url("public/images/left.png");
+    background: url("controls/left.png");
     width: 66px!important;
     height: 59px!important;
     background-size: 66px 59px!important;
@@ -180,14 +180,14 @@ body {
 #rightArrow {
     margin-top: 272px;
     float:right;
-    background: url("public/images/right.png");
+    background: url("controls/right.png");
     width: 66px!important;
     height: 59px!important;
     background-size: 66px 59px!important;
 }
 
 #view {
-    background: url("public/images/play.png");
+    background: url("controls/play.png");
 } 
 
 #imgSelect {
