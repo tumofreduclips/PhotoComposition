@@ -1,0 +1,23 @@
+{
+  "name": "storyboard",
+  "version": "1.0.0",
+  "description": "The tumo storyboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/JNCMark/Tame.git"
+  },
+  "author": "Mark Amiraghyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/JNCMark/Tame/issues"
+  },
+  "homepage": "https://gitlab.com/JNCMark/Tame#README",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

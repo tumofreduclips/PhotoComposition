@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Story Board</title>
+  <script src="/js/images.js"></script>
+  <script src="/js/functions.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+
+<body>
+  <div id="buttons">
+    <div id="view" class="btn" onclick="View()"><span>Aperçu</span></div>
+    <div id="save" class="btn" onclick="Save()"><span>Enregistrer</div>
+    <div id="import" class="btn" onclick="Import()"><span>Importer</span></div>
+    <div id="delete" class="btn" onclick="Delete()"><span>Supprimer</span></div>
+    <div id="flip"   class="btn" onclick="Flip()" style="display: none"><span>Retourner</span></div>
+    <div id="expand" class="btn" onclick="Expand()" style="display: none"><span>Agrandir</span></div>
+    <div id="shrink" class="btn" onclick="Shrink()" style="display: none"><span>Réduire</span></div>
+  </div>
+  <div id="app">
+    <div id="main-panel">
+      <div class="panel mainPanel"
+        onclick="disactivateAllImages()"
+        ondragover="event.preventDefault()"
+        ondragenter="event.preventDefault()"
+      ></div>
+      <textarea id="frame-description" rows="5" placeholder="Describe the Action" style="width: 802px; font-size: 1.75em"></textarea>
+    </div>
+
+    <div id="other">
+      <p class = "subtitle">Aperçu du storyboard</p>
+      <div id="panels">
+        <div class="panel" id="panel0" onclick="loadFrame(this)"></div>
+        <div class="panel" id="panel1" onclick="loadFrame(this)"></div>
+        <div class="panel" id="panel2" onclick="loadFrame(this)"></div>
+        <div class="panel" id="panel3" onclick="loadFrame(this)"></div>
+        <div class="panel" id="panel4" onclick="loadFrame(this)"></div>
+        <div class="panel" id="panel5" onclick="loadFrame(this)"></div>
+      </div>
+
+      <div id="imgSelect">
+        <p class="select active" id="select0" onclick="characters(); this.classList.add('active'); document.getElementById('select1').classList.remove('active')">Ajoute tes personnages</p>
+        <p class="select" id="select1" onclick="backgrounds(); this.classList.add('active'); document.getElementById('select0').classList.remove('active')">Choisis un arrière-plan</p>
+      </div>
+      <div id="images" class="addImages active"></div>
+      <div id="backgrounds" class="addImages"></div>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="viewer" style="display: none">
+    <div class="frame">
+      <div class="view-panel" id="view-panel0"></div>
+      <p class = "frame_desc"></p>
+    </div>
+    <div class="frame">
+      <div class="view-panel" id="view-panel1"></div>
+      <p class = "frame_desc"></p>
+    </div>
+    <div class="frame">
+      <div class="view-panel" id="view-panel2"></div>
+      <p class = "frame_desc"></p>
+    </div>
+    <div class="frame">
+      <div class="view-panel" id="view-panel3"></div>
+      <p class = "frame_desc"></p>
+    </div>
+    <div class="frame">
+      <div class="view-panel" id="view-panel4"></div>
+      <p class = "frame_desc"></p>
+    </div>
+    <div class="frame">
+      <div class="view-panel" id="view-panel5"></div>
+      <p class = "frame_desc"></p>
+    </div>
+  </div>
+</body>
+
+</html>
