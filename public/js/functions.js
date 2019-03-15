@@ -71,7 +71,7 @@ function createDraggableImage(src, index) { // Create a draggable image
 
     // The image
     let img = new Image();
-    img.src = `/public/images/characters/${src}`;
+    img.src = `public/images/characters/${src}`;
     img.id = `image${index}`;
     img.classList.add('dragImage');
 
@@ -89,7 +89,7 @@ function createBackground(src, index) { // Create the background
 
     // The image
     let img = new Image();
-    img.src = `/public/images/backgrounds/${src}`;
+    img.src = `public/images/backgrounds/${src}`;
     img.onclick = () => setBackground(src);
     img.id = `background${index}`;
     img.classList.add('dragImage');
@@ -186,7 +186,7 @@ function loadFrame(evt, isImport) {
 
     // If frame exists and has data {
     // Set the background
-    main.style.background = frames[currentFrame].background ? `url("/public/images/backgrounds/${frames[currentFrame].background}")` : 'white';
+    main.style.background = frames[currentFrame].background ? `url("public/images/backgrounds/${frames[currentFrame].background}")` : 'white';
 
     // Add the images
     for (let img of frames[currentFrame].data) {
