@@ -1,2 +1,2 @@
 const imageList = ["Untitled 1.png","Untitled 2.png","Untitled 3.png","Untitled 4.png","Untitled 5.png","Untitled 6.png","Untitled 7.png","Untitled 8.png","Untitled 9.png","Untitled 10.png","Untitled 11.png","Untitled 12.png","Untitled 13.png","Untitled 14.png","Untitled 15.png","Untitled 16.png"];
-const backgroundList = ["Background 1.PNG","Background 2.PNG","Background 3.PNG","Background 4.PNG","GameBG1.PNG"]
+const backgroundList = ["Battleground1.png","Battleground2.png","Battleground3.png","Battleground4.png","City1.png","City2_pale.png","City3_pale.png","City4_pale.png","War.png","War2.png","War4.png","postapocalypse2.png","postapocalypse3.png","postapocalypse4.png"]
